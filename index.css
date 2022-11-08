@@ -20,3 +20,67 @@ a:hover a:active {
 .badge-discord {
     background-color: rebeccapurple;
 }
+
+.image-grid {
+    --gap: 16px;
+    --cols: 4;
+    --row-height: 100px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.image-grid>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-col-4 {
+    grid-column: span 4;
+}
+
+.img-col-3 {
+    grid-column: span 3;
+}
+
+.img-col-2 {
+    grid-column: span 2;
+}
+
+.img-col-1 {
+    grid-column: span 1;
+}
+
+.img-row-1 {
+    grid-row: span 1;
+}
+
+.img-row-2 {
+    grid-row: span 2;
+}
+
+.img-row-3 {
+    grid-row: span 3;
+}
+
+.img-row-4 {
+    grid-row: span 4;
+}
+
+@media screen and (max-width: 990px) {
+    .image-grid {
+        --cols: 2;
+        --row-height: 200px;
+    }
+
+    .image-grid>img {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+}
