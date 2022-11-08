@@ -23,7 +23,7 @@ a:hover a:active {
 
 .image-grid {
     --gap: 16px;
-    --cols: 4;
+    --cols: 8;
     --row-height: 100px;
 
     box-sizing: border-box;
@@ -75,12 +75,7 @@ a:hover a:active {
 
 @media screen and (max-width: 990px) {
     .image-grid {
-        --cols: 2;
+        --cols: 4;
         --row-height: 200px;
-    }
-
-    .image-grid>img {
-        grid-row: span 1;
-        grid-column: span 1;
     }
 }
