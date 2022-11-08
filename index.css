@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+a {
+    color: currentColor;
+}
+
+a:hover a:active {
+    text-decoration: none;
+}
+
+.badge {
+    font-size: 100%;
+    font-weight: 500;
+}
+
+.badge-discord {
+    background-color: rebeccapurple;
+}
